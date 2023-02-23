@@ -11,3 +11,10 @@ h1, h3 {
 p{
     padding: 15px;
 }
+td{
+    color: white;
+}
+.table{
+    border: 10px solid;
+    border-color: deeppink;
+}

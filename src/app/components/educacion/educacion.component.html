@@ -1,15 +1,27 @@
 <div class="row">
-    <h1> EDUCACION</h1>
+    <h1> Educacion</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-secondary" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+        </button>
+    </div>
     <div class="col-lg-1"></div>
-<div class="col-lg-11">
- <ul>
-    <li>
-        <h1>Estudios</h1>
-    </li>
-    <h4> Cursando el 4to año de la carrera de Contador Publico (Universidad Nacional Del Litoral)</h4>
-    <h4> Curso "Se Programar" (Argentina Programa)</h4>
-    <h4> Fundamentos de Marketing Digital (Google Activate)</h4>
-    <h4> Gestion circuitos administrativos ( Tango Software)</h4>
- </ul>
-</div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>{{Educacion.nombreE}}</td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf=" isLogged"><button class="btn btn-info" routerLink="/editedu/{{Educacion.id}}">
+
+                            <i class="bi bi-pencil-square"></i>Editar</button></td>
+                    <td *ngIf=" isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
+
+                        <i class="bi bi-trash3"></i>Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
