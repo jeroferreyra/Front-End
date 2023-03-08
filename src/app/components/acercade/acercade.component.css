@@ -11,12 +11,13 @@ margin-top: 10%;
 }
 @media (min-width: 576px){
     #fotoperfil{
-        position: absolute;
-        width: 8%;
         border-radius: 150%;
-        box-shadow: 3px 3px 3px 3px black;
-        left: 4%;
-        top: 350px;
+        box-shadow: 3px 3px 3px 3px white;
+    }
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     @media (max-width: 575px){
         #fotoperfil{
