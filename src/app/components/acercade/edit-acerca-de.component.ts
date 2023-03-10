@@ -15,11 +15,11 @@ persona: persona = null;
 
 ngOnInit(): void {
   const id = this.activatedRouter.snapshot.params['id'];
-    this.personaService.update(id, this.persona).subscribe(
+    this.personaService.detail(id).subscribe(
       data => {
-        this.router.navigate(['']);
+        this.persona = data;
       }, err => {
-        alert("Error al modificar la educación");
+        alert("Error al modificar");
         this.router.navigate(['']);
       }
     )
