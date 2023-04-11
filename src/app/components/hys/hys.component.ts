@@ -13,7 +13,7 @@ skill: Skill[] = [];
   constructor(private skillS: SkillService, private tokenService: TokenService){}
 isLogged=false;
   ngOnInit(): void {
-    this.cargarSkills;
+    this.cargarSkills();
     if(this.tokenService.getToken()){
       this.isLogged = true;
     } else {

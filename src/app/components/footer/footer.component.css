@@ -8,5 +8,5 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 2px -2px 5px rgb(150, 14, 86);
+    box-shadow: 2px -7px 10px rgb(150, 14, 86);
 }

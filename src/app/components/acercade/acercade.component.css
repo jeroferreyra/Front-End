@@ -9,10 +9,13 @@ text-align: center;}
 font-weight: bold;
 margin-top: 10%;
 }
+#fotoperfil{
+    width: 100px;
+}
 @media (min-width: 576px){
     #fotoperfil{
         border-radius: 150%;
-        box-shadow: 3px 3px 3px 3px white;
+        box-shadow: 1px 1px 1px 1px black;
     }
     .descripcion{
         display: flex;

@@ -9,7 +9,10 @@
 }
 img{
     width: 50px;
-    padding: 3px;
+    padding: 5px;
+}
+img:hover{
+    transform: scale(1.2);
 }
 /*... para la vista de celular ...*/
 @media (max-width:575px){

@@ -5,7 +5,7 @@ div{
     background-color: #282d32;
     color: white;
 }
-h1, h3 {
+h2, h3 {
     display: inline;
 }
 p{
@@ -15,6 +15,6 @@ td{
     color: white;
 }
 .table{
-    border: 10px solid;
+    border: 5px solid;
     border-color: deeppink;
 }
