@@ -29,4 +29,12 @@ h2::after{
     100%{
         background-position: 0 0;
     }
+    
 }
+
+       @media (max-width: 575px){
+        #cuadro{
+           text-align: center;
+           font-size: 25px;
+        }
+    }
